@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EG-OSED">
+
+    <title>EG-OSED</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/EG-OSED/css/avatarclip_main.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/EG-OSED/css/bulma-carousel.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/EG-OSED/css/bulma-slider.min.css">
+
+    <!-- <script type="module" src="./assets/js/background_box.js"></script> -->
+    <script type="module" src="./js/background_star.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Packages/EG-OSED/js/bulma-carousel.min.js"></script>
+    <script src="./Packages/EG-OSED/js/bulma-slider.min.js"></script>
+    <script src="./Packages/EG-OSED/js/index.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <section class="section intro-section">
+            <div class="intro-container" style="text-align: center;">
+                <div class="header">
+                    <h3 class="papername">Edge-Guided Oceanic Scene Element Detection</h3>
+                </div>
+                <ul class="list-unstyled name-list">
+                    <li><a href="" target="_self">Keke Xiang</a></li>
+                    <li><a href="" target="_self">Xingshuai Dong</a></li>
+                    <li><a href="" target="_self">Weibo
+                            Wang</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=InD0J_IAAAAJ&hl=en&oi=ao"
+                            target="_blank">Xinghui Dong</a></li>
+
+                </ul>
+                <ul class="list-unstyled name-list">
+                    <li><a href="https://indtlab.github.io/" target="_blank">INDTLab, Ocean University of China </a>
+                    </li>
+                </ul>
+                <!-- <ul class="list-unstyled name-list">
+                    <li><a href="" target="_blank">Ocean University of China</a></li>
+                </ul> -->
+
+            </div>
+            </br>
+
+
+            <div align="center">
+                <div class="container">
+                    <div class="columns is-multiline is-centered">
+                        <table>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src='./Packages/EG-OSED/Data/network/arch_small.JPG' height="400"
+                                        width="700" />
+                                </td>
+
+                        </table>
+                    </div>
+                </div>
+                <p> The architecture of the proposed EG-OSED-YOLOv4 method, in which YOLOv4 is used as the base object
+                    detector.</p>
+
+            </div>
+        </section>
+
+        <section class='section'>
+            <div class="section-title">
+                Abstract
+            </div>
+            <div class="details" style="text-align: justify" ;>
+                Oceanic environmental monitoring is critical to environmental protection. As a core technique, Oceanic
+                Scene Element Detection (OSED) plays an important role. Existing oceanic object detection approaches are
+                usually focused on a single category. Therefore, a multi-category OSED data set is demanded. Considering
+                oceanic scene elements normally present large-scale complicated structures, the edge cue is particular
+                useful for representation of these elements. However, none of existing object detection methods take
+                this cue into account. To address the two problems, we first collect and annotate three OSED data sets,
+                which comprise a total of 10,040 images and 60 categories. Then we propose a generic Multi-scale
+                Edge-Guided Module (MSEGM), which can be inserted into an object detection network, for guiding the
+                backbone toward learning edge characteristics. An Edge-Guided Oceanic Scene Element Detection (EG-OSED)
+                framework is built on top of this module and a base object detector, which can be end-to-end trained
+                using a multi-task learning scheme. A series of experiments are conducted on the three OSED data sets.
+                The results demonstrate that the EG-OSED framework outperforms its base object detector which does not
+                utilize edges. We believe that these promising results should be due to the importance of edges to
+                representation of oceanic scene elements.
+
+            </div>
+        </section>
+
+
+        <section class='section links-section'>
+            <div class='section-title'>
+                Links
+            </div>
+            <div class='details links-table'>
+                <table>
+                    <tr>
+                        <td>
+                            <div class='links-container'>
+                                <a href='' target="_blank"><img class='links-cover'
+                                        src='./Packages/EG-OSED/Data/Cover.png' alt='PDF Cover' width="140"></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class='links-container'>
+                                <a href='https://github.com/INDTLab/EG-OSED' target="_blank"><img class='links-cover'
+                                        src='./Packages/EG-OSED/Data/github.png' alt='github icon' width="160"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <!-- <a href='' target="_blank">Paper</a> -->
+                            Paper
+                        </td>
+                        <td><a href='https://github.com/INDTLab/EG-OSED' target="_blank">Code</a></td>
+
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="section-title">
+                Experimental Results
+            </div>
+            <div align="center">
+                <div class="container">
+                    <div class="columns is-multiline is-centered">
+                        <table>
+
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src='./Packages/EG-OSED/Data/results/Table.PNG' height="50%" width="80%" />
+                                </td>
+
+
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <p> <b>Quantitative Results on the FOSD_OD, Places365_OD, SUN_OD data sets.</b></p>
+
+            </div>
+
+            <div align="center">
+                <div class="container">
+                    <div class="columns is-multiline is-centered">
+                        <table>
+                            <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                    <img src='./Packages/EG-OSED/Data/results/results.JPG' height="80%" width="100%" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <hr>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                </div>
+                <p> <b> Qualitative Results derived using EG-OSED-YOLOv4 on the FOSD_OD, Places365_OD, SUN_OD data
+                        sets</b> </p>
+
+            </div>
+        </section>
+
+
+        <section>
+
+            <!--             <p>We referred to the project page of <a href="https://ykdai.github.io/projects/BracketFlare">BracketFlare</a> when creating this
+                project page.</p> -->
+            <!-- <p> This project is licensed under <a
+                href="https://github.com/ykdai/BracketFlare/blob/main/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.</p> -->
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>
