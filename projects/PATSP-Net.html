@@ -48,13 +48,12 @@
         <section class="section intro-section">
             <div class="intro-container" style="text-align: center;">
                 <div class="header">
-                    <h3 class="papername">Deep Color-Corrected Multi-scale Retinex Network for Underwater Image Enhancement
+                    <h3 class="Perception-Aware Texture Similarity Prediction
                     </h3>
                 </div>
                 <ul class="list-unstyled name-list">
                     <li><a href="" target="_blank">Hao Qi</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=bRWUiGIAAAAJ&hl=en&oi=ao" target="_blank">Huiyu Zhou</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=iPYdUpAAAAAJ&hl=en" target="_blank">Junyu Dong</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=bRWUiGIAAAAJ&hl=en&oi=ao" target="_blank">Weibo Wang</a></li>
                     <li><a href="https://scholar.google.com/citations?user=InD0J_IAAAAJ&hl=en&oi=ao" target="_blank">Xinghui Dong</a></li>
     
                 </ul>
@@ -75,7 +74,7 @@
               <table>
                 <tr>
                   <td style="padding:5px 5px 5px 5px;">
-                      <img src='./Packages/CCMSRNet/Data/network/arch_small.png' height="400" width="1178" />
+                      <img src='https://github.com/INDTLab/PATSP-Net/assets/85012818/23bbdff9-b351-4646-b0ff-8afa7333514a' height="400" width="1178" />
                   </td>
                   <!-- <td style="padding:5px 5px 5px 5px;">
                       <img src='./Packages/BracketFlare/Data/removal_result/Fig6_input2_000001.png' onmouseover="this.src='./Packages/BracketFlare/Data/removal_result/Fig6_output2_000001.png';" onmouseout="this.src='./Packages/BracketFlare/Data/removal_result/Fig6_input2_000001.png';"  height="256" width="256" />
@@ -105,7 +104,7 @@
               </table>
             </div>
           </div>
-            <p> The proposed Color-Corrected Multi-scale Retinex Network (CCMSR-Net), which comprises a Color Correction subnetwork (CC-Net) and a Multi-scale Retinex subnetwork (MSR-Net).</p>            
+            <p> The architecture of the proposed PATSP-Net, which contains the BiLAViT (a) and the RSLoss (e). Also, the internal structures of CI-BFM, BiLA and BAB are shown in (b), (c) and (d) respectively.</p>            
             
         </div>
     </section>
@@ -115,19 +114,8 @@
                 Abstract
             </div>
             <div class="details" style="text-align: justify" ;>
-                The acquisition of high-quality underwater images is of great importance to ocean exploration activities. 
-                However, images captured in the underwater environment often suffer from degradation due to complex imaging conditions, 
-                leading to various issues, such as color cast, low contrast and low visibility. Although many traditional methods have been used to address these issues, 
-                they usually lack robustness in diverse underwater scenes. On the other hand, deep learning techniques struggle to generalize to unseen images, 
-                due to the challenge of learning the complicated degradation process. Inspired by the success achieved by the Retinex-based methods, 
-                we decompose the Underwater Image Enhancement (UIE) task into two consecutive procedures, including color correction and visibility enhancement, 
-                and introduce a novel deep Color-Corrected Multi-scale Retinex Network (CCMSR-Net). With regard to the two procedures, 
-                this network comprises a Color Correction subnetwork (CC-Net) and a Multi-scale Retinex subnetwork (MSR-Net), 
-                which are built on top of the Hybrid Convolution-Axial Attention Block (HCAAB) that we design. Thanks to this block, 
-                the CCMSR-Net is able to efficiently capture local characteristics and the global context.
-                Experimental results show that the CCMSR-Net outperforms, or at least performs comparably to, 11 baselines across five test sets. 
-                We believe that these promising results are due to the effective combination of color correction methods and the multi-scale Retinex model, 
-                achieved by jointly exploiting Convolutional Neural Networks (CNNs) and Transformers.
+                    Texture similarity plays important roles in texture analysis and material recognition. However, perceptually-consistent fine-grained texture similarity prediction is still challenging. The discrepancy between the texture similarity data obtained using algorithms and human visual perception has been demonstrated. This dilemma is normally attributed to the \textit{texture representation} and \textit{similarity metric} utilised by the algorithms, which are inconsistent with human perception. To address this challenge, we introduce a Perception-Aware Texture Similarity Prediction Network (PATSP-Net). This network comprises a Bilinear Lateral Attention Transformer network (BiLAViT) and a novel loss function, namely, RSLoss. The BiLAViT contains a Siamese Feature Extraction Subnetwork (SFEN) and a Metric Learning Subnetwork (MLN), designed on top of the mechanisms of human perception. On the other hand, the RSLoss measures both the ranking and the scaling differences. %motivated by the importance of the ranking data to perceptual similarity estimation. 
+                    To our knowledge, either the BiLAViT or the RSLoss has not been explored for texture similarity tasks. The PATSP-Net performs better than, or at least comparably to, its counterparts on three data sets for different fine-grained texture similarity prediction tasks. We believe that this promising result should be due to the joint utilization of the BiLAViT and RSLoss, which is able to learn the perception-aware texture representation and similarity metric.
             </div>
         </section>
         
@@ -141,185 +129,28 @@
                     <tr>
                         <td>
                             <div class='links-container'>
-                                <a href='https://github.com/INDTLab/CCMSRNet/blob/main/Deep_Color-Corrected_Multi-scale_Retinex_Network_for_Underwater_Image_Enhancement_compressed.pdf' target="_blank"><img class='links-cover'src='./Packages/CCMSRNet/Data/Cover.png' alt='PDF Cover' width="140"></a>
+                                <a href='' target="_blank"><img class='links-cover'src='./Packages/CCMSRNet/Data/Cover.png' alt='PDF Cover' width="140"></a>
                             </div>
                         </td>
                         <td>
                             <div class='links-container'>
-                                <a href='https://github.com/INDTLab/CCMSRNet' target="_blank"><img class='links-cover'
-                                        src='./Packages/CCMSRNet/Data/github.png' alt='github icon' width="160"></a>
+                                <a href='https://github.com/INDTLab/PATSP-Net' target="_blank"><img class='links-cover'
+                                        src='https://github.com/INDTLab/PATSP-Net/assets/85012818/23bbdff9-b351-4646-b0ff-8afa7333514a' alt='github icon' width="160"></a>
                             </div>
                         </td>
                     </tr>
                     
                     <tr>
                         <td>
-                            <a href='https://github.com/INDTLab/CCMSRNet/blob/main/Deep_Color-Corrected_Multi-scale_Retinex_Network_for_Underwater_Image_Enhancement_compressed.pdf' target="_blank">Paper</a>
+                            <a href='' target="_blank">Paper</a>
                         </td>
-                        <td><a href='https://github.com/INDTLab/CCMSRNet' target="_blank">Code</a></td>
+                        <td><a href='https://github.com/INDTLab/PATSP-Net' target="_blank">Code</a></td>
                         
                     </tr>
                     
                 </table>
             </div>
         </section>
-        
-
-
-       
-        <!-- <section class="section">
-            <div class="section-title">
-                Video
-            </div>
-            <div class="details">
-                    <center><iframe width="1080" height="608" src="https://www.youtube.com/embed/FM8kAM13zUA" title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe></center>
-            </div>
-        </section> -->
-
-        <!-- <section class="section">
-            <div class="section-title">
-                Dataset
-            </div>
-            <div class="details">
-                <div align="center">
-                <img class='links-cover'
-                        src='./Packages/BracketFlare/Data/piechart_screenshot.png' ,height="50%" width="80%"></div>
-            </div>
-            <p> Visualization of typical examples and distribution of our dataset. The dataset provides different types of light sources in diverse scenes. 
-                Based on light source types, we classify them into eight categories with different flare patterns.</p>
-        </section> -->
-        
-        <section class="section">
-            <div class="section-title">
-                Shared Encoder-Decoder Network
-            </div>
-            <div class="details">
-                <div align="center">
-                <img class='links-cover'
-                        src='./Packages/CCMSRNet/Data/network/network.png' ,height="50%" width="80%"></div>
-            </div>
-            <div class="section-title">
-                Lightweight Axial Self-Attention
-            </div>
-            <div class="details">
-                <div align="center">
-                <img class='links-cover'
-                        src='./Packages/CCMSRNet/Data/network/attention_comparison.drawio.png' ,height="20%" width="60%"></div>
-            </div>
-            <div align="center">
-                <p> <b>The self-attention mechanism (a) and the proposed lightweight axial self-attention mechanism (b).</b></p>
-                </div>
-        </section>
-
-        <section class="section">
-            <div class="section-title">
-                Experimental Results
-            </div>
-            <div align="center">
-                <div class="container">
-                    <div class="columns is-multiline is-centered">
-                      <table>
-                        <tr>
-                          <td style="padding:5px 5px 5px 5px;">
-                              <img src='./Packages/CCMSRNet/Data/results/TableI.png' height="80%" width="100%" />
-                          </td>
-                          <td style="padding:5px 5px 5px 5px;">
-                            <img src='./Packages/CCMSRNet/Data/results/TableII.png' height="80%" width="100%" />
-                        </td>
-                        </tr>
-                         
-                        
-                          
-                      </table>
-                    </div>
-                  </div>
-                    <p> <b>Quantitative Results on UIEB, SUIM-E, EUVP and RUIE data sets.</b></p>            
-                    
-                </div>
-            
-                <div align="center">
-                    <div class="container">
-                        <div class="columns is-multiline is-centered">
-                          <table>
-                            <tr>
-                                <td style="padding:5px 5px 5px 5px;">
-                                    <img src='./Packages/CCMSRNet/Data/results/UIEB_half.png' height="80%" width="100%" />
-                                </td>
-                              </tr>
-                              <tr> <td> <hr></td> </tr>
-                                
-                                    
-                                
-                                
-                                
-                              
-                              <tr>
-                                <td style="padding:5px 5px 5px 5px;">
-                                    <img src='./Packages/CCMSRNet/Data/results/SUIM_half.png' height="80%" width="100%" />
-                                </td>
-                              </tr>
-                              <tr> <td> <hr></td> </tr>
-                              <tr>
-                                <td style="padding:5px 5px 5px 5px;">
-                                    <img src='./Packages/CCMSRNet/Data/results/EUVP_half.png' height="80%" width="100%" />
-                                </td>
-                              </tr>
-                              <tr> <td> <hr></td> </tr>
-                            <tr>
-                              <td style="padding:5px 5px 5px 5px;">
-                                  <img src='./Packages/CCMSRNet/Data/results/C60_half.png' height="80%" width="100%" />
-                              </td>
-                            </tr>
-                            <tr> <td> <hr></td> </tr>
-
-                            <tr>
-                                <td style="padding:5px 5px 5px 5px;">
-                                    <img src='./Packages/CCMSRNet/Data/results/RUIE_half.png' height="80%" width="100%" />
-                                </td>
-                              </tr>
-                            
-            
-                             
-                            
-                              
-                          </table>
-                        </div>
-                      </div>
-                        <p> <b> Qualitative Results on Real World Underwater Images.</b> </p>            
-                        
-                    </div>
-        </section>
-         <section class='section'>
-            <div class='section-title'>
-                Citation
-            </div>
-            
-                <pre>
-                    <code>
-    @ARTICLE{10336777,
-    author={Qi, Hao and Zhou, Huiyu and Dong, Junyu and Dong, Xinghui},
-    journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-    title={Deep Color-Corrected Multi-scale Retinex Network for Underwater Image Enhancement}, 
-    year={2023},
-    doi={10.1109/TGRS.2023.3338611}}
-                    </code>
-                  </pre>
-                  
-
-        </section>
-        
-
-        <section>
-    
-<!--             <p>We referred to the project page of <a href="https://ykdai.github.io/projects/BracketFlare">BracketFlare</a> when creating this
-                project page.</p> -->
-            <!-- <p> This project is licensed under <a
-                href="https://github.com/ykdai/BracketFlare/blob/main/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.</p> -->
-        </section>
-
     </div>
 
 
