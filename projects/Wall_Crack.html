@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CCMSRNet">
+
+    <title>Wall Crack Detection</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/Wall_Crack/css/avatarclip_main.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/Wall_Crack/css/bulma-carousel.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/Wall_Crack/css/bulma-slider.min.css">
+
+    <!-- <script type="module" src="./assets/js/background_box.js"></script> -->
+    <script type="module" src="./js/background_star.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Packages/Wall_Crack/js/bulma-carousel.min.js"></script>
+    <script src="./Packages/Wall_Crack/js/bulma-slider.min.js"></script>
+    <script src="./Packages/Wall_Crack/js/index.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="wrapper">
+        <section class="section intro-section">
+            <div class="intro-container" style="text-align: center;">
+                <div class="header">
+                    <h3 class="papername">Drone-Based Wall Crack Detection Using Model-Agnostic Meta-Learning
+                    </h3>
+                </div>
+                <ul class="list-unstyled name-list">
+                    <li><a href="" target="_blank">Wenxuan Shao</a></li>
+                    <li><a href="" target="_blank">Borong Xu</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=InD0J_IAAAAJ&hl=en&oi=ao" target="_blank">Xinghui Dong</a></li>
+    
+                </ul>
+                <ul class="list-unstyled name-list">
+                    <li><a href="https://indtlab.github.io/" target="_blank">INDTLab, Ocean University of China </a></li>
+                </ul>
+            </div>
+            </br>
+       
+
+        <div align="center">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+              <table>
+                <tr>
+                  <td style="padding:5px 5px 5px 5px;">
+                      <img src='./Packages/Wall_Crack/Data/network/maml.png' height="500" width="889" />
+                  </td>
+                </tr>        
+              </table>
+            </div>
+          </div>
+            <p>  The MAMl-SegNet architecture we propose, which comprises a Crack-MAMl and a lightweight Stacked Encoder-Decoder Segmentation Network.
+                          
+            
+        </div>
+    </section>
+
+        <section class='section'>
+            <div class="section-title">
+                Abstract
+            </div>
+            <div class="details" style="text-align: justify" ;>
+                With the urbanization process and aging of buildings, wall crack detection plays a crucial role in the maintenance and safety of building structures. Due to the inherent characteristics of defects, however, cracks in the wall are relatively sparse, compared to the normal area. High-altitude regions are also difficult to access. As a result, large wall crack data sets are rare. This issue impairs the training of deep networks and may lead to the suboptimal detection result. To address the issue, we first capture a set of wall crack images using a drone, which are comprised of a new wall crack data set, namely, Ocean University of China Wall Crack Data Set (OUC-Crack). Then we propose a drone-based wall crack detection system, which consists of a drone platform and a crack detection network referred to as the Model-Agnostic Meta-Learning Based Segmentation Network (MAML-SegNet). The MAML-SegNet is built on top of a Stacked Encoder-Decoder Segmentation Network (SEDNet) and an MAML method (Crack-MAML) which is adopted to suit the wall crack detection task. Therefore, only a small number of training images are required. To fulfil the real-time detection task on drones, we further develop an efficient SEDNet (EFF-SEDNet). The proposed system is tested on our OUC-Crack and two publicly available crack data sets, including Volker and Crack500. Experimental results show that our SEDNet outperforms, or at least performs comparably to, its counterparts. In addition, the real-time detection can be achieved with a proper accuracy when the EFF-SEDNet is deployed on a drone. These promising results should be due to the few-shot learning ability of meta-learning and the efficient network design.
+            </div>
+        </section>
+        
+        
+        <section class='section links-section'>
+            <div class='section-title'>
+                Links
+            </div>
+            <div class='details links-table'>
+                <table>
+                    <tr>
+                        <td>
+                            <div class='links-container'>
+                               <!-- <a href='https://github.com/INDTLab/Wall_Crack/blob/main/PR.pdf' target="_blank"><img class='links-cover'src='./Packages/Wall_Crack/Data/Cover.png' alt='PDF Cover' width="140"></a>  -->
+                               <img class='links-cover'src='./Packages/Wall_Crack/Data/Cover.png' alt='PDF Cover' width="140">
+                            </div>
+                        </td>
+                        <td>
+                            <div class='links-container'>
+                               <!-- <a href='https://github.com/INDTLab/Wall-Crack-Detection' target="_blank"><img class='links-cover'
+                                        src='./Packages/Wall_Crack/Data/github.png' alt='github icon' width="160"></a>  -->
+                                    <img class='links-cover'
+                                            src='./Packages/Wall_Crack/Data/github.png' alt='github icon' width="160">
+                            </div>
+                        </td>
+                        <td>
+                            <div class='links-container'>
+                               <!-- <a href='https://drive.google.com/file/d/1m2Lfir5cGTaFdor-5GDOfHMy7cnKtsIC/view' target="_blank"><img class='links-cover'
+                                        src='./Packages/Wall_Crack/Data/github.png' alt='github icon' width="160"></a>  -->
+                                    <img class='links-cover'
+                                            src='./Packages/Wall_Crack/Data/datashow.png' alt='github icon' width="150">
+                            </div>
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <!--  <a href='https://github.com/INDTLab/Wall_Crack/blob/main/PR.pdf' target="_blank">Paper</a> -->
+                            <a href="javascript:void(0)" οnclick="function here">Paper</a>
+                        </td>
+                        <td> 
+                            <!-- <a href='https://github.com/INDTLab/Wall-Crack-Detection' target="_blank">Code</a>  -->  
+                            <a href="javascript:void(0)" οnclick="function here">Code</a>
+                        </td>  
+                        <td> 
+                            <!-- <a href='https://drive.google.com/file/d/1m2Lfir5cGTaFdor-5GDOfHMy7cnKtsIC/view' target="_blank">Code</a>  -->  
+                            <a href="javascript:void(0)" οnclick="function here">Data Set</a>
+                        </td>  
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-title">
+               The OUC-Crack Data Set 
+            </div>
+            <div class="details">
+                <div align="center">
+                    <img class='links-cover'
+                        src='./Packages/Wall_Crack/Data/results/dataset.png' ,height="50%" width="80%"> 
+                </div>
+            </div>
+            
+        </section>
+        
+
+
+        <section class="section">
+            <div class="section-title">
+               The Stacked Encoder-Decoder Segmentation Network 
+            </div>
+            <div class="details">
+                <div align="center">
+                    <img class='links-cover'
+                        src='./Packages/Wall_Crack/Data/network/segnet.png' ,height="50%" width="80%">
+                    <img class='links-cover'
+                        src='./Packages/Wall_Crack/Data/network/LCB.png' ,height="30%" width="40%">  
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section">
+            <div class="section-title">
+                Experimental Results
+            </div>
+            <div align="center">
+                <div class="container">
+                    <div class="columns is-multiline is-centered">
+                      <table>
+                        <tr>
+                          <td style="padding:5px 5px 5px 5px;">
+                            <img src='./Packages/Wall_Crack/Data/results/Table.png' height="100%" width="100%" />
+                        </td>
+                        </tr>
+                          
+                      </table>
+                    </div>
+                  </div>
+                    <!-- <p> <b>Quantitative Results on UIEB, SUIM-E, EUVP and RUIE data sets.</b></p>             -->
+                    
+                </div>
+            
+                <div align="center">
+                    <div class="container">
+                        <div class="columns is-multiline is-centered">
+                          <table>
+                            <tr>
+                              <td style="padding:5px 5px 5px 5px;">
+                                  <img src='./Packages/Wall_Crack/Data/results/result.png' height="80%" width="100%" />
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                        <p> <b> Qualitative Results on Volker, Crack500, OUC-Crack data set.</b> </p>            
+                        
+                    </div>
+            <!-- <div class="section-title">
+                Lightweight Axial Self-Attention
+            </div>
+            <div class="details">
+                <div align="center">
+                <img class='links-cover'
+                        src='./Packages/CCMSRNet/Data/network/attention_comparison.drawio.png' ,height="50%" width="80%"></div>
+            </div> -->
+        </section>
+        
+
+        <section>
+    
+<!--             <p>We referred to the project page of <a href="https://ykdai.github.io/projects/BracketFlare">BracketFlare</a> when creating this
+                project page.</p> -->
+            <!-- <p> This project is licensed under <a
+                href="https://github.com/ykdai/BracketFlare/blob/main/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.</p> -->
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>
