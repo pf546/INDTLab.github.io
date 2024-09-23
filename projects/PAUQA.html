@@ -112,14 +112,16 @@
                 Abstract
             </div>
             <div class="details" style="text-align: justify" ;>
-                In contrast to manual close-up ship hull inspection methods, Remote Inspection Technology (RIT) offers the potential to improve performance while minimising costs. Nevertheless, 
-              the effectiveness of the RIT is still subject to the experience and expertise of the inspectors. As a result, development has focused on applying automated data processing methods 
-              to RIT itself. However, in the hull inspection scenario, several challenges remain, including suboptimal hull imaging conditions, disparities in the distribution of defect categories, 
-              and significant variations in defect size. To overcome these challenges, we introduce a multi-task hull inspection network (MTHI-Net) that leverages the principles of multi-task learning 
-              to improve hull inspection accuracy. This network addresses two problems associated with RIT: image-level defect classification and pixel-level defect segmentation. Specifically, MTHI-Net 
-              exploits the advantages of spatial and channel self-attention mechanisms, a residual refinement module, and a feature fusion module to enhance the feature representation capability for 
-              defect classification and mitigate the probability of mis-segmentation. In addition, a lightweight MTHI-Net called MTHI-Net-Lite was developed. The experimental results show that the 
-              proposed networks fulfil the hull inspection task better than the baselines in both real underwater and in-dock RIT scenarios.
+                Underwater Image Quality Assessment (UIQA) plays an important role in assess the effectiveness of Underwater Image Enhancement (UIE) algorithms or to evaluate the quality of underwater images. 
+                However, accurate UIQA that are consistent with human perception remains challenging. This dilemma on one hand is attributed to the lack of real human visual perception UIQA data, and on the other
+                hand that the quality feature representation used by exist- ing UIQA algorithms are inconsistent with human perceptions. To address these issues, we introduce a Large scale Underwater Image Quality
+                Data set (LUIQD) which acquires human perception image quality score, and propose an UIQA net- work based on an efficient visual Transformer network with color and sharpness assessment. Specifically, 
+                the LUIQD includes 64,180 real underwater images and enhance images covering a wide range of scenes, target and imaging conditions. Subjective user studies are designed to annotate and evaluate the
+                perceptual quality score of the images in LUIQD. Based on the analysis of the mech- anisms of human perception, we further design a data-driven UIQA network that integrates an efficient convolutional 
+                attention vision transformer to extract multi-scale features by a multi-path structure. Considering the specificity of human perception of underwater images, features from the chrominance and luminance 
+                domains are extracted and fused with local and global images features for joint feature interaction. This UIQA network is named as Perception-Aware Underwater image Quality Assessment Network 
+                (PAUQA-Net). Extensive exper- iments conduted on LUIQD and other data sets demonstrate that the proposed PAUQA-Net achieves superior assessment performance compared with the most popular UIQA and IQA
+                methods.
             </div>
         </section>
 
@@ -269,11 +271,11 @@
             <div class='details links-table'>
                 <table>
                     <tr>
-                        <td>
+                        <!-- <td>
                             <div class='links-container'>
                                 <a href='https://www.sciencedirect.com/science/article/pii/S0029801824009454' target="_blank"><img class='links-cover'src='./Packages/ShipHullSurvey/Data/Cover.png' alt='PDF Cover' width="140"></a>
                             </div>
-                        </td>
+                        </td> -->
                         <!-- <td>
                             <div class='links-container'>
                                 <a href='https://github.com/INDTLab/SSSN_FSS' target="_blank"><img class='links-cover'
@@ -286,7 +288,10 @@
                         <td>
                             Paper
                         </td>
-                        <!-- <td><a href='https://github.com/INDTLab/SSSN_FSS' target="_blank">Code</a></td> -->
+                        
+                        <td>
+                            <a href='https://github.com/CatchACat083/PAUQA' target="_blank"> Code </a>
+                        </td>
                         
                     </tr>
                     
