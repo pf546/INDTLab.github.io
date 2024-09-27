@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PATS-UIENet">
+
+    <title>PATS-UIENet</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/PATS-UIENet/css/avatarclip_main.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/PATS-UIENet/css/bulma-carousel.min.css">
+    <link id="theme-style" rel="stylesheet" href="./Packages/PATS-UIENet/css/bulma-slider.min.css">
+
+    <!-- <script type="module" src="./assets/js/background_box.js"></script> -->
+    <script type="module" src="./js/background_star.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Packages/PATS-UIENet/js/bulma-carousel.min.js"></script>
+    <script src="./Packages/PATS-UIENet/js/bulma-slider.min.js"></script>
+    <script src="./Packages/PATS-UIENet/js/index.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="wrapper">
+        <section class="section intro-section">
+            <div class="intro-container" style="text-align: center;">
+                <div class="header">
+                    <h3 class="papername">Semi-Supervised Underwater Image Enhancement<br>Using A Physics-Aware Approach
+                    </h3>
+                </div>
+                <ul class="list-unstyled name-list">
+                    <li><a href="" target="_blank">Hao Qi</a></li>
+                    <li><a href="" target="_blank">Shixuan Xu</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=InD0J_IAAAAJ&hl=en&oi=ao" target="_blank">Xinghui Dong</a></li>
+    
+                </ul>
+                <ul class="list-unstyled name-list">
+                    <li><a href="https://indtlab.github.io/" target="_blank">INDTLab, Ocean University of China </a></li>
+                </ul>
+                <!-- <ul class="list-unstyled name-list">
+                    <li><a href="" target="_blank">Ocean University of China</a></li>
+                </ul> -->
+
+            </div>
+            </br>
+       
+
+        <div align="center">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+              <table>
+                <tr>
+                  <td style="padding:5px 5px 5px 5px;">
+                      <img src='.\Packages\PATS-UIENet\Data\network\img_arch.png' height="803" width="1096" />
+                  </td>
+
+                </tr>
+              </table>
+            </div>
+          </div>
+            <p> The architecture of the proposed PA-UIENet, which comprises three individual streams: D-Stream, B-Stream and A-Stream, 
+                to estimate the degradation parameters of the revised IFM.</p>            
+            
+        </div>
+    </section>
+
+        <section class='section'>
+            <div class="section-title">
+                Abstract
+            </div>
+            <div class="details" style="text-align: justify" ;>
+                Underwater images normally suffer from degradation due to the transmission medium of water bodies. 
+                Both traditional prior-based approaches and deep learning-based methods have been used to address this problem. 
+                However, the inflexible assumption of the former often impairs their effectiveness in handling diverse underwater scenes, 
+                while the generalization of the latter to unseen images is usually weakened by insufficient data. 
+                In this study, we leverage both the physics-based underwater Image Formation Model (IFM) and deep learning techniques for Underwater Image Enhancement (UIE). 
+                To this end, we propose a novel Physics-Aware Triple-Stream Underwater Image Enhancement Network, 
+                i.e., PATS-UIENet, which comprises a Direct Signal Transmission Estimation Steam (D-Stream), 
+                a Backscatter Signal Transmission Estimation Steam (B-Stream) and an Ambient Light Estimation Stream (A-Stream). 
+                This network fulfills the UIE task by explicitly estimating the degradation parameters of a revised IFM. 
+                We also adopt an IFM-inspired semi-supervised learning framework, which exploits both the labeled and unlabeled images, to address the issue of insufficient data. 
+                Our method performs better than, or at least comparably to, sixteen baselines across five testing sets in the degradation estimation and UIE tasks. 
+                This should be due to the fact that it not only can model the degradation but also can learn the characteristics of diverse underwater scenes.
+            </div>
+        </section>
+        
+        
+        <section class='section links-section'>
+            <div class='section-title'>
+                Links
+            </div>
+            <div class='details links-table'>
+                <table>
+                    <tr>
+                        <td>
+                            <div class='links-container'>
+                                <a href=' ' target="_blank"><img class='links-cover'src='./Packages/PATS-UIENet/Data/Cover.png' alt='PDF Cover' width="140"></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class='links-container'>
+                                <a href=' ' target="_blank"><img class='links-cover'
+                                        src='./Packages/PATS-UIENet/Data/github.png' alt='github icon' width="160"></a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href=' ' target="_blank">Paper</a>
+                        </td>
+                        <td><a href=' ' target="_blank">Code</a></td>
+                        
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-title">
+                IFM-Inspired Semi-Supervised Learning Framework
+            </div>
+            <div class="details">
+                <div align="center">
+                <img class='links-cover'
+                        src='./Packages/PATS-UIENet/Data/network/img_train.png' ,height="50%" width="80%"></div>
+            <div align="center">
+                <p> <b>The proposed semi-supervised learning framework, which comprises a bi-directional supervised learning scheme and an unsupervised learning scheme, 
+                    used for training our PATS-UIENet.</b></p>
+                </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">
+                Experimental Results
+            </div>
+            <div align="center">
+                <div class="container">
+                    <div class="columns is-multiline is-centered">
+                      <table>
+                        <tr>
+                            <td style="padding:5px 5px 5px 5px;">
+                                <img src='./Packages/PATS-UIENet/Data/results/TableI.png' height="80%" width="100%" />
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="padding:5px 5px 5px 5px;">
+                                <img src='./Packages/PATS-UIENet/Data/results/TableII.png' height="80%" width="100%" />
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="padding:5px 5px 5px 5px;">
+                                <img src='./Packages/PATS-UIENet/Data/results/TableIII.png' height="80%" width="100%" />
+                            </td>
+                          </tr>
+                         
+                      </table>
+                    </div>
+                  </div>
+                    <p> <b>Quantitative Results on UIEB, SUIM-E, EUVP and RUIE data sets.</b></p>            
+                    
+                </div>
+            
+                <div align="center">
+                    <div class="container">
+                        <div class="columns is-multiline is-centered">
+                          <table>
+                            <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                    <img src='./Packages/PATS-UIENet/Data/results/baselines_U80.png' height="80%" width="100%" />
+                                </td>
+                              </tr>
+                              <tr> <td> <hr></td> </tr>
+                                
+                              <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                    <img src='./Packages/PATS-UIENet/Data/results/baselines_S110.png' height="80%" width="100%" />
+                                </td>
+                              </tr>
+                              <tr> <td> <hr></td> </tr>
+
+                              <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                    <img src='./Packages/PATS-UIENet/Data/results/baselines_Scene.png' height="80%" width="100%" />
+                                </td>
+                              </tr>
+                              <tr> <td> <hr></td> </tr>
+
+                            <tr>
+                              <td style="padding:5px 5px 5px 5px;">
+                                <img src='./Packages/PATS-UIENet/Data/results/baselines_C60.png' height="80%" width="100%" />
+                              </td>
+                            </tr>
+                            <tr> <td> <hr></td> </tr>
+
+                            <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                  <img src='./Packages/PATS-UIENet/Data/results/baselines_UCCS.png' height="80%" width="100%" />
+                                </td>
+                              </tr>
+                              <tr> <td> <hr></td> </tr>
+
+                            <tr>
+                                <td style="padding:5px 5px 5px 5px;">
+                                    <img src='./Packages/PATS-UIENet/Data/results/baselines_R53.png' height="80%" width="100%" />
+                                </td>
+                              </tr>
+                                
+                          </table>
+                        </div>
+                      </div>
+                        <p> <b> Qualitative Results on Five Real World Underwater Images and A Underwater Image.</b> </p>            
+                        
+                    </div>
+        </section>
+         <section class='section'>
+            <div class='section-title'>
+                Citation
+            </div>
+            
+                <pre>
+                    <code>
+    @ARTICLE{
+
+    }
+                    </code>
+                  </pre>
+                  
+
+        </section>
+        
+
+        <section>
+    
+<!--             <p>We referred to the project page of <a href="https://ykdai.github.io/projects/BracketFlare">BracketFlare</a> when creating this
+                project page.</p> -->
+            <!-- <p> This project is licensed under <a
+                href="https://github.com/ykdai/BracketFlare/blob/main/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.</p> -->
+        </section>
+
+    </div>
+
+
+</body>
+
+</html>
